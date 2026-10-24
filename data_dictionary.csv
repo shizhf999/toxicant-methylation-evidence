@@ -1,0 +1,59 @@
+table_name,column_name,data_type,definition,allowed_values,missing_code,requirement
+toxicant_cpg_evidence_curated,evidence_id,string,Stable identifier for one toxicant-CpG-study-tissue-platform relation; join key to the frozen evidence table,,not_reported|not_applicable,required
+toxicant_cpg_evidence_curated,source_locator,string,"Exact source anchor issued with the review templates, for example file::sheet!cell",,not_reported|not_applicable,required
+toxicant_cpg_evidence_curated,reviewer_id,enum,Review slots contributing source records; their identity does not mean every final field was independently supplied by both reviewers.,reviewer_A;reviewer_C,not_reported|not_applicable,required
+toxicant_cpg_evidence_curated,reviewed_on,date,Round-specific review metadata: preserve first-round values; use the later original review date for five second-round rows under scoped consent.,,not_reported|not_applicable,required
+toxicant_cpg_evidence_curated,toxicant_id,string,"Coordinator-issued exposure-concept key, not a chemical identity or automatically transferable vocabulary/CAS key.",,not_reported|not_applicable,required
+toxicant_cpg_evidence_curated,toxicant_name,string,"Display name of the exposure concept, normalized under coordinator ruling 2",,not_reported|not_applicable,required
+toxicant_cpg_evidence_curated,cpg_id,string,Source-reported array probe identifier; retain ch.6.19775382R without relabeling and exclude it from CpG-only matching.,,not_reported|not_applicable,required
+toxicant_cpg_evidence_curated,effect_direction,enum,Sign of the reported association,negative|positive,not_reported|not_applicable,required
+toxicant_cpg_evidence_curated,effect_estimate,string,Effect estimate exactly as reported by the source,,not_reported|not_applicable,required
+toxicant_cpg_evidence_curated,effect_estimate_type,string,"Estimator that produced the effect estimate, normalized under coordinator ruling 3 section 2.2",,not_reported|not_applicable,required
+toxicant_cpg_evidence_curated,standard_error,string,Standard error as reported; not_reported where the source reports none,,not_reported|not_applicable,required
+toxicant_cpg_evidence_curated,p_value,string,Source-reported p-value; preserve numeric text and tiny positive values. Stored source zeros have unknown exact precision and no assigned bound; do not guess replacements or treat them as exact probabilities.,,not_reported|not_applicable,required
+toxicant_cpg_evidence_curated,tissue,string,"Assayed biological tissue, normalized under coordinator ruling 1 section 3",,not_reported|not_applicable,required
+toxicant_cpg_evidence_curated,methylation_platform,string,"Assay platform, normalized under coordinator ruling 1 section 1",,not_reported|not_applicable,required
+toxicant_cpg_evidence_curated,sample_size,string,Analytic sample size for this association as reported,,not_reported|not_applicable,required
+toxicant_cpg_evidence_curated,study_id,string,"Curated source-study/cohort label, not an independence assessment. First-round and second-round provenance differ; the five second-round IDs are coordinator-issued.",,not_reported|not_applicable,required
+toxicant_cpg_evidence_curated,pmid,string,PubMed identifier of the source publication,,not_reported|not_applicable,required
+toxicant_cpg_evidence_curated,source_result_scope,string,"Completeness or selection scope of the source result set, normalized under coordinator ruling 3 section 1.2",,not_reported|not_applicable,required
+toxicant_cpg_evidence_curated,inclusion_decision,enum,Inclusion outcome; both curators declared a single uniform rule over the pre-screened active set rather than per-record judgement,include,not_reported|not_applicable,required
+toxicant_cpg_evidence_curated,exclusion_reason,enum,Reason for exclusion; not_applicable throughout because no record was excluded,not_applicable,not_reported|not_applicable,required
+toxicant_cpg_evidence_curated,notes,string,Preserve both reviewers' tagged source notes; coordinator notes remain in a separate column.,,not_reported|not_applicable,required
+toxicant_cpg_evidence_curated,exposure_medium,string,"Medium in which exposure was measured; coordinator-derived under ruling 3, same concept as toxicant_cpg_evidence.exposure_medium. PMID34717175 PM2.5 total mass is ambient air, not a PM2.5 component; the 20260921 candidate retains the historical error and the 20261001 correction candidate has a separately approved N2 erratum. Approval does not authorize public evidence release",,not_reported|not_applicable,required
+toxicant_cpg_evidence_curated,exposure_window,string,"Source-specific averaging or lag window, coordinator-derived under the applicable signed ruling; the five second-round records use 2- or 7-day trailing windows.",,not_reported|not_applicable,required
+toxicant_cpg_evidence_curated,methylation_scale,string,"Scale of the methylation outcome, for example percent 5-mC, beta value, or M-value; coordinator-derived under ruling 3 section 2.3",,not_reported|not_applicable,required
+toxicant_cpg_evidence_curated,exposure_contrast,string,Reported exposure contrast or increment represented by the effect estimate; coordinator-derived under ruling 3 section 2.2,,not_reported|not_applicable,required
+toxicant_cpg_evidence_curated,coordinator_note,string,Coordinator adjudication note; kept separate from the curator-submitted notes column,,not_reported|not_applicable,required
+controlled_id_vocabulary_crosswalk,release_toxicant_id,string,"Issued exposure-concept key; primary key of the association table, not interchangeable with vocabulary_entity_id",,not_applicable,required
+controlled_id_vocabulary_crosswalk,vocabulary_entity_id,string,Separate vocabulary entity or particle-fraction key associated with the exposure concept,,not_applicable,required
+controlled_id_vocabulary_crosswalk,vocabulary_preferred_label,string,Preferred vocabulary label; not the original study exposure label,,not_applicable,required
+controlled_id_vocabulary_crosswalk,entity_type,enum,Kind of linked vocabulary entity,pure_substance|mixture_component|particle_fraction|exposure_construct,not_applicable,required
+controlled_id_vocabulary_crosswalk,relationship,enum,Association semantics; never a declaration that the keys or measurements are equivalent,airborne_particulate_component|airborne_elemental_component|airborne_pollutant_measurement|particle_fraction_in_sampling_context|biomarker_analyte_in_matrix|occupational_exposure_construct,not_applicable,required
+controlled_id_vocabulary_crosswalk,first_round_rows,integer,Number of first-round curated evidence rows using this exposure key,,not_applicable,required
+controlled_id_vocabulary_crosswalk,second_round_rows,integer,Number of separately reviewed second-round rows mapped to this key; does not assert integration in the first-round candidate,,not_applicable,required
+controlled_id_vocabulary_crosswalk,vocabulary_verification_status,string,Vocabulary assertion status; pending CAS assertions remain unverified,,not_applicable,required
+controlled_id_vocabulary_crosswalk,external_identifier_transfer_permitted,boolean,Whether CAS/ChEBI may be transferred to the exposure key; always false under the signed policy,false,not_applicable,required
+controlled_id_vocabulary_crosswalk,approval_status,enum,Association accepted under signed policy but public evidence release remains blocked,association_signed_release_blocked,not_applicable,required
+exposure_definition_qualifiers,evidence_id,string,Primary key joining one curated evidence row; definitions must not be joined by exposure ID alone,,not_applicable,required
+exposure_definition_qualifiers,release_toxicant_id,string,Exposure-concept key matching the joined curated evidence row,,not_applicable,required
+exposure_definition_qualifiers,pmid,string,Source PubMed identifier matching the joined evidence row,,not_applicable,required
+exposure_definition_qualifiers,analyte_definition,enum,Study-specific urinary arsenic definition: total_arsenic_gfaas denotes source-reported GFAAS total; sum_iAs_MMA_DMA denotes HPLC-ICP-MS sum excluding arsenobetaine; not_applicable is used only for the coarse-PM rows,total_arsenic_gfaas|sum_iAs_MMA_DMA|not_applicable,not_applicable,required
+exposure_definition_qualifiers,definition_note,string,"Operational measurement or derivation note; coarse PM is modeled PM10 minus modeled PM2.5, not direct sampling. Absence of a qualifier row means outside this limited 109-row scope, not missing evidence or verified absence",,not_applicable,required
+exposure_definition_qualifiers,source_locator,string,Source anchor matching the joined curated evidence row,,not_applicable,required
+candidate_analysis_guards,evidence_id,string,Stable key joining exactly one curated evidence row.,,,required
+candidate_analysis_guards,pmid,string,Publication identifier matching the joined evidence row.,,,required
+candidate_analysis_guards,cpg_id,string,"Unmodified source probe identifier, including non-cg labels.",,,required
+candidate_analysis_guards,declared_platform,string,Platform label matching the curated source row.,,,required
+candidate_analysis_guards,platform_group,enum,Declared platform group; unknown is never defaulted to 450K.,450K|EPIC|unknown,,required
+candidate_analysis_guards,manifest_mapping_status,string,Lookup outcome under the declared platform and cg-form rule; not biological validation.,,,required
+candidate_analysis_guards,manifest_failure_reason,string,Reason a CpG-only lookup failed; an empty string means no failure reason.,,,required
+candidate_analysis_guards,manifest_id,string,Pinned manifest identifier; no annotation redistribution authorization.,,,required
+candidate_analysis_guards,manifest_version,string,Version of the manifest used for the lookup.,,,required
+candidate_analysis_guards,cpg_only_lookup_candidate,boolean,Necessary lookup prerequisite only; false for non-cg labels even when the label exists in a manifest.,true|false,,required
+candidate_analysis_guards,source_p_value,string,Exact reported numeric text or controlled missing code; parse with precision-preserving arithmetic.,,,required
+candidate_analysis_guards,p_value_representation,enum,"Source representation; stored zeros have unknown precision, not exact zero probabilities.",controlled_missing_value|numeric_zero_exact_precision_unknown|positive_numeric_value_as_reported,,required
+candidate_analysis_guards,p_value_transform_candidate,boolean,Positive reported p-value prerequisite only; false for source zeros and missing values.,true|false,,required
+candidate_analysis_guards,source_standard_error,string,Unmodified reported standard-error text; missing values are not imputed.,,,required
+candidate_analysis_guards,inverse_variance_weight_candidate,boolean,Positive reported standard-error prerequisite only; not pooling eligibility or authorization.,true|false,,required
+candidate_analysis_guards,guard_reasons,string,"Semicolon-separated operation limitations; empty means no listed failure, not permission to analyze.",,,required

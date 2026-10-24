@@ -1,0 +1,41 @@
+{
+  "title": "Provenance-aware toxicant-methylation evidence resource",
+  "upload_type": "dataset",
+  "description": "Version 1.0.0 of a provenance-aware compilation of 16,681 published exposure-DNA methylation association records in 26 fields from 12 publications, tracked through 13 source-artifact entries. Includes crosswalk (22 rows), scoped qualifiers (109 rows), operation guards (16,681 rows), dictionaries, source provenance, a separate citation-only clock roster (937 memberships; no coefficients), and standard-library validation code with five synthetic tests. Source-stored zero p-values and missing standard errors are preserved. No original publication artifacts, manuscript drafts, participant data or scoring implementation are included. CC BY 4.0 is limited to original compilation/documentation and database rights the authors can license; unchanged validator/tests retain MIT. Third-party sources receive no new license. Historical source registration gap PMID30055357 and unknown acquisition/version fields are explicitly documented. Public access is not anonymous peer review.",
+  "creators": [
+    {
+      "name": "Shi, Zhongfeng",
+      "affiliation": "Guangdong Pharmaceutical University, China"
+    },
+    {
+      "name": "Jin, Hongfei",
+      "affiliation": "Guangdong Pharmaceutical University, China"
+    },
+    {
+      "name": "Wu, Wenni",
+      "affiliation": "Guangdong Pharmaceutical University, China"
+    },
+    {
+      "name": "Xian, Qingfei",
+      "affiliation": "Guangdong Pharmaceutical University, China"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "version": "1.0.0",
+  "publication_date": "2026-10-24",
+  "keywords": [
+    "DNA methylation",
+    "environmental exposure",
+    "data provenance",
+    "EWAS",
+    "epigenetic clock reference"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/shizhf999/toxicant-methylation-evidence",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

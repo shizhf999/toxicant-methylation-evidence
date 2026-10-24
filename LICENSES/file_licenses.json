@@ -1,0 +1,31 @@
+{
+  "original_assignment_date": "2026-10-01",
+  "public_compilation_license_date": "2026-10-24",
+  "scope": "CC BY 4.0 applies only to author-owned original compilation, documentation and database rights; it does not license third-party publications or underlying facts. Validator and tests retain MIT.",
+  "exact_preexisting_licensed_files": [
+    {
+      "original_path": "scripts/validate_candidate_tables.py",
+      "distributed_path": "scripts/validate_candidate_tables.py",
+      "sha256": "0273aaacd4b7d71453f17a4dc6fbe6a947546c64e60385cc0feab5925687318c",
+      "license": "MIT"
+    },
+    {
+      "original_path": "tests/test_validate_candidate_tables.py",
+      "distributed_path": "tests/test_validate_candidate_tables.py",
+      "sha256": "e855d0d06899622c9a2c49b1803ff31234934d31d6ebf5317c9224c77bd6780c",
+      "license": "MIT"
+    },
+    {
+      "original_path": "config/merged_candidate_table_contract_proposal_20261001.json",
+      "distributed_path": "config/table_contract.json",
+      "sha256": "c750a50d0412d8f11fa68f5c96fb38dc5f02ad67d6bc0719b4a46dd95aa10ea1",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "original_path": "validation/full_evidence_one_pass_review/merged_candidate_data_dictionary_proposal_20261001.csv",
+      "distributed_path": "data_dictionary.csv",
+      "sha256": "9d7c9d8b881a2c4b38e7d6485e663bb27393ac04c2047f2b3cbfd5dd577fec1e",
+      "license": "CC-BY-4.0"
+    }
+  ]
+}

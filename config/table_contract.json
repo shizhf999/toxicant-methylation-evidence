@@ -1,0 +1,367 @@
+{
+  "title": "Merged internal candidate tabular contract proposal",
+  "contract_format": "project_tabular_contract",
+  "version": "1.2.0",
+  "prepared_on": "2026-10-01",
+  "status": "pending_authorized_human_approval",
+  "supersedes_design_only": "config/table_schema.json",
+  "tables": {
+    "toxicant_cpg_evidence_curated": {
+      "primary_key": "evidence_id",
+      "rows": 16681,
+      "required_columns": [
+        "evidence_id",
+        "source_locator",
+        "reviewer_id",
+        "reviewed_on",
+        "toxicant_id",
+        "toxicant_name",
+        "cpg_id",
+        "effect_direction",
+        "effect_estimate",
+        "effect_estimate_type",
+        "standard_error",
+        "p_value",
+        "tissue",
+        "methylation_platform",
+        "sample_size",
+        "study_id",
+        "pmid",
+        "source_result_scope",
+        "inclusion_decision",
+        "exclusion_reason",
+        "notes",
+        "exposure_medium",
+        "exposure_window",
+        "methylation_scale",
+        "exposure_contrast",
+        "coordinator_note"
+      ],
+      "controlled_missing_value": [
+        "not_reported",
+        "not_applicable"
+      ],
+      "relation_to_toxicant_cpg_evidence": "curation output that feeds the frozen evidence table; it is not that table and omits its required review_status and release_eligible columns",
+      "disagreement_resolution": "coordinator_ruling",
+      "independent_adjudication_performed": false,
+      "status": "proposed_contract_approval_and_publication_blocked",
+      "provenance_by_round": {
+        "first_round": {
+          "records": 16676,
+          "double_curated_columns": [
+            "toxicant_name",
+            "cpg_id",
+            "effect_direction",
+            "effect_estimate",
+            "effect_estimate_type",
+            "standard_error",
+            "p_value",
+            "tissue",
+            "methylation_platform",
+            "sample_size",
+            "study_id",
+            "pmid",
+            "source_result_scope",
+            "inclusion_decision",
+            "exclusion_reason"
+          ],
+          "provenance_counts_by_column": {
+            "evidence_id": {
+              "prefilled-identical": 16676
+            },
+            "source_locator": {
+              "prefilled-identical": 16676
+            },
+            "reviewer_id": {
+              "curation-slot-metadata": 16676
+            },
+            "reviewed_on": {
+              "prefilled-identical": 16676
+            },
+            "toxicant_id": {
+              "coordinator-derived": 16676
+            },
+            "toxicant_name": {
+              "double-curated": 16676
+            },
+            "cpg_id": {
+              "double-curated": 16676
+            },
+            "effect_direction": {
+              "double-curated": 16676
+            },
+            "effect_estimate": {
+              "double-curated": 16676
+            },
+            "effect_estimate_type": {
+              "double-curated": 16676
+            },
+            "standard_error": {
+              "double-curated": 16676
+            },
+            "p_value": {
+              "double-curated": 16676
+            },
+            "tissue": {
+              "double-curated": 16676
+            },
+            "methylation_platform": {
+              "double-curated": 16676
+            },
+            "sample_size": {
+              "double-curated": 16676
+            },
+            "study_id": {
+              "double-curated": 16676
+            },
+            "pmid": {
+              "double-curated": 16676
+            },
+            "source_result_scope": {
+              "double-curated": 16676
+            },
+            "inclusion_decision": {
+              "double-curated": 16676
+            },
+            "exclusion_reason": {
+              "double-curated": 16676
+            },
+            "notes": {
+              "curator-submitted": 16676
+            },
+            "exposure_medium": {
+              "coordinator-derived": 16676
+            },
+            "exposure_window": {
+              "coordinator-derived": 16676
+            },
+            "methylation_scale": {
+              "coordinator-derived": 16676
+            },
+            "exposure_contrast": {
+              "coordinator-derived": 16676
+            },
+            "coordinator_note": {
+              "coordinator-derived": 16676
+            }
+          }
+        },
+        "second_round": {
+          "records": 5,
+          "double_curated_columns": [
+            "toxicant_name",
+            "cpg_id",
+            "effect_direction",
+            "effect_estimate",
+            "effect_estimate_type",
+            "standard_error",
+            "p_value",
+            "tissue",
+            "methylation_platform",
+            "sample_size",
+            "pmid",
+            "source_result_scope",
+            "inclusion_decision",
+            "exclusion_reason"
+          ],
+          "provenance_counts_by_column": {
+            "evidence_id": {
+              "signed_review_identity": 5
+            },
+            "source_locator": {
+              "signed_review_identity": 5
+            },
+            "reviewer_id": {
+              "signed_review_identity": 5
+            },
+            "reviewed_on": {
+              "coordinator_approved_later_review_date": 5
+            },
+            "toxicant_id": {
+              "coordinator_issued_controlled_id": 5
+            },
+            "toxicant_name": {
+              "resolved_by_signed_coordinator_ruling": 5
+            },
+            "cpg_id": {
+              "double_curated_agreement": 5
+            },
+            "effect_direction": {
+              "double_curated_agreement": 5
+            },
+            "effect_estimate": {
+              "double_curated_agreement": 5
+            },
+            "effect_estimate_type": {
+              "resolved_by_signed_coordinator_ruling": 5
+            },
+            "standard_error": {
+              "double_curated_agreement": 5
+            },
+            "p_value": {
+              "resolved_by_signed_coordinator_ruling": 5
+            },
+            "tissue": {
+              "resolved_by_signed_coordinator_ruling": 5
+            },
+            "methylation_platform": {
+              "resolved_by_signed_coordinator_ruling": 5
+            },
+            "sample_size": {
+              "double_curated_agreement": 5
+            },
+            "study_id": {
+              "coordinator_issued_controlled_id": 5
+            },
+            "pmid": {
+              "double_curated_agreement": 5
+            },
+            "source_result_scope": {
+              "resolved_by_signed_coordinator_ruling": 5
+            },
+            "inclusion_decision": {
+              "double_curated_agreement": 5
+            },
+            "exclusion_reason": {
+              "double_curated_agreement": 5
+            },
+            "notes": {
+              "merged_original_notes_with_reviewer_labels": 5
+            },
+            "exposure_medium": {
+              "coordinator_derived_signed_ruling": 5
+            },
+            "exposure_window": {
+              "coordinator_derived_signed_ruling": 5
+            },
+            "methylation_scale": {
+              "coordinator_derived_signed_ruling": 5
+            },
+            "exposure_contrast": {
+              "coordinator_derived_signed_ruling": 5
+            },
+            "coordinator_note": {
+              "coordinator_derived_signed_ruling": 5
+            }
+          }
+        }
+      },
+      "scope_consent_sha256": "7437324c188c240eeb5e0046fd39dac838e24ba0e57fd2ee1c14ea860168f3b2",
+      "probe_identifier_semantics": "Source identifiers are preserved; cg-only operations require the separate guard flag.",
+      "source_zero_pvalue_semantics": "Unknown exact precision, no guessed positive replacement or bound.",
+      "not_double_curated_columns_by_round": {
+        "first_round": [
+          "evidence_id",
+          "source_locator",
+          "reviewer_id",
+          "reviewed_on",
+          "toxicant_id",
+          "notes",
+          "exposure_medium",
+          "exposure_window",
+          "methylation_scale",
+          "exposure_contrast",
+          "coordinator_note"
+        ],
+        "second_round": [
+          "evidence_id",
+          "source_locator",
+          "reviewer_id",
+          "reviewed_on",
+          "toxicant_id",
+          "study_id",
+          "notes",
+          "exposure_medium",
+          "exposure_window",
+          "methylation_scale",
+          "exposure_contrast",
+          "coordinator_note"
+        ]
+      }
+    },
+    "controlled_id_vocabulary_crosswalk": {
+      "primary_key": [
+        "release_toxicant_id"
+      ],
+      "rows": 22,
+      "required_columns": [
+        "release_toxicant_id",
+        "vocabulary_entity_id",
+        "vocabulary_preferred_label",
+        "entity_type",
+        "relationship",
+        "first_round_rows",
+        "second_round_rows",
+        "vocabulary_verification_status",
+        "external_identifier_transfer_permitted",
+        "approval_status"
+      ],
+      "foreign_key_semantics": "release_toxicant_id refers to the evidence exposure-concept key; vocabulary_entity_id refers to the separate vocabulary entity key, not an equivalent key",
+      "external_identifier_transfer_permitted_values": [
+        "false"
+      ],
+      "approval_status_values": [
+        "association_signed_release_blocked"
+      ],
+      "status": "proposed_contract_approval_and_publication_blocked"
+    },
+    "exposure_definition_qualifiers": {
+      "primary_key": [
+        "evidence_id"
+      ],
+      "rows": 109,
+      "required_columns": [
+        "evidence_id",
+        "release_toxicant_id",
+        "pmid",
+        "analyte_definition",
+        "definition_note",
+        "source_locator"
+      ],
+      "foreign_key_semantics": "evidence_id joins the curated evidence table; release_toxicant_id and pmid must match that evidence row",
+      "analyte_definition_values": [
+        "total_arsenic_gfaas",
+        "sum_iAs_MMA_DMA",
+        "not_applicable"
+      ],
+      "scope": "89 urinary arsenic records and 20 modeled coarse-PM records",
+      "missing_record_semantics": "No row means outside this limited N1/N4 scope, not missing evidence or verified absence",
+      "status": "proposed_contract_approval_and_publication_blocked"
+    },
+    "candidate_analysis_guards": {
+      "primary_key": [
+        "evidence_id"
+      ],
+      "rows": 16681,
+      "required_columns": [
+        "evidence_id",
+        "pmid",
+        "cpg_id",
+        "declared_platform",
+        "platform_group",
+        "manifest_mapping_status",
+        "manifest_failure_reason",
+        "manifest_id",
+        "manifest_version",
+        "cpg_only_lookup_candidate",
+        "source_p_value",
+        "p_value_representation",
+        "p_value_transform_candidate",
+        "source_standard_error",
+        "inverse_variance_weight_candidate",
+        "guard_reasons"
+      ],
+      "foreign_key_semantics": "Every candidate evidence_id occurs exactly once; copied source values must match.",
+      "eligibility_semantics": "Mathematical prerequisites only, not biological validation, rights clearance, enrichment or pooling eligibility.",
+      "manifest_annotation_columns_included": false,
+      "status": "proposed_contract_approval_and_publication_blocked"
+    }
+  },
+  "controlled_missing_values": {
+    "not_reported": "the source was checked and reports no value",
+    "not_applicable": "the field does not apply to this record; never used as a fallback for an unestablished value"
+  },
+  "public_schema_activated": false,
+  "publication_permitted": false,
+  "rights_related_final_row_count_may_require_new_contract_version": true
+}

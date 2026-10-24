@@ -1,0 +1,74 @@
+EXACT-FILE LICENSE NOTICE - 2026-10-01
+
+Licensor and attribution name: Zhongfeng Shi
+Scope manifest: config/standalone_validator_file_licenses_20261001.json
+
+This notice applies only to the four files and SHA-256 fingerprints listed
+in that manifest. It does not license any surrounding directory or the
+entire project. Historical pending proposals remain historical records;
+the new manifest records the current assignments.
+
+PART A - MIT LICENSE
+
+Applies only to:
+  scripts/validate_candidate_tables.py
+  tests/test_validate_candidate_tables.py
+
+Copyright (c) 2026 Zhongfeng Shi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+PART B - CREATIVE COMMONS ATTRIBUTION 4.0 INTERNATIONAL
+
+Applies to the project-original expression and any database rights the
+licensor is entitled to license in:
+  config/merged_candidate_table_contract_proposal_20261001.json
+  validation/full_evidence_one_pass_review/merged_candidate_data_dictionary_proposal_20261001.csv
+
+These materials are licensed under Creative Commons Attribution 4.0
+International (SPDX: CC-BY-4.0). The complete legal terms are incorporated
+by reference at:
+  https://creativecommons.org/licenses/by/4.0/legalcode
+
+License summary (not a substitute for the legal terms):
+  https://creativecommons.org/licenses/by/4.0/
+
+Attribution: Zhongfeng Shi, project_3_toxicant_clock_resource, 2026.
+Identify the applicable file, retain supplied attribution and notices,
+provide the license link, and indicate modifications as required by the
+license. The licensed expression may be shared and adapted, including
+commercially, under the CC BY 4.0 terms.
+
+SCOPE AND DISTRIBUTION
+
+These assignments do not grant new rights in third-party articles,
+supplementary workbooks, source-derived evidence tables, manifest annotations,
+clock coefficients, or dependencies. They do not resolve separate source
+permissions or certify institutional ownership. Mere facts may not require
+copyright permission; this notice does not assert exclusive rights in facts.
+
+The license grants permit reuse of the specified licensed material according
+to their terms. They are distinct from authorization for this assistant to
+upload the project, publish its evidence data, or activate its public schema.
+No such project action is authorized by this notice.
+
+Keep this notice and the exact-file manifest with any future distributed
+copies. Private conversation-derived consent records are not required in
+that distribution. No changes to the four fingerprinted source files are
+necessary to record these licenses.
