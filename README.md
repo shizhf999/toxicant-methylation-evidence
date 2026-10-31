@@ -1,6 +1,6 @@
 # Provenance-aware toxicant-methylation evidence resource
 
-Version 1.0.0, prepared 2026-10-24 from the frozen 2026-10-01 scientific snapshot. Public versioned repository: https://github.com/shizhf999/toxicant-methylation-evidence/tree/v1.0.0. This is a data and validation resource, not a manuscript preprint. Public GitHub access is not anonymous reviewer access. A GitHub release alone does not mint a DOI; cite a Zenodo DOI only after its record has actually been published and verified.
+Version 1.0.1 is based on the frozen 2026-10-01 scientific snapshot. Public repository: https://github.com/shizhf999/toxicant-methylation-evidence. This independent data and validation resource is not tied to a particular journal. GitHub releases do not themselves mint a DOI; cite an archive DOI only after its record has been published and verified.
 
 ## Contents and counting units
 
@@ -31,7 +31,7 @@ source_manifest.csv provides publication identifiers, source URLs, artifact name
 
 ## Scope, licenses and limitations
 
-No original publication PDFs, XML, supplementary workbooks, publisher figures, correspondence, private handoffs, signed records, credentials, remote-transfer helpers, installed libraries or binaries are bundled. The manuscript and manuscript figures are supplied separately through the submission workflow.
+No original publication PDFs, XML, supplementary workbooks, publisher figures, manuscript files, manuscript-specific analysis outputs, correspondence, private handoffs, signed records, credentials, remote-transfer helpers, installed libraries or binaries are bundled.
 
 Original compilation and documentation use CC BY 4.0 only within the authors' rights; unchanged validator/tests use MIT. See LICENSE.md and LICENSES/file_licenses.json. No publisher permission grant is claimed. The exact-file historical notice and original license-scoped bytes are retained. The reader dictionary indicates modifications; the separate scientific snapshot is unchanged.
 

@@ -2,21 +2,11 @@ cff-version: 1.2.0
 message: "Please cite this versioned data and validation resource."
 type: dataset
 title: "Provenance-aware toxicant-methylation evidence resource"
-version: "1.0.0"
-date-released: "2026-10-24"
+version: "1.0.1"
 url: "https://github.com/shizhf999/toxicant-methylation-evidence"
 repository-code: "https://github.com/shizhf999/toxicant-methylation-evidence"
 license: CC-BY-4.0
 authors:
   - family-names: "Shi"
     given-names: "Zhongfeng"
-    affiliation: "Guangdong Pharmaceutical University, China"
-  - family-names: "Jin"
-    given-names: "Hongfei"
-    affiliation: "Guangdong Pharmaceutical University, China"
-  - family-names: "Wu"
-    given-names: "Wenni"
-    affiliation: "Guangdong Pharmaceutical University, China"
-  - family-names: "Xian"
-    given-names: "Qingfei"
     affiliation: "Guangdong Pharmaceutical University, China"

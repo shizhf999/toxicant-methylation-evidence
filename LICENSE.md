@@ -1,6 +1,6 @@
 # License and attribution
 
-Original compilation, documentation and any database rights that the authors are entitled to license are licensed under Creative Commons Attribution 4.0 International (CC-BY-4.0): https://creativecommons.org/licenses/by/4.0/legalcode . Attribution: Zhongfeng Shi, Hongfei Jin, Wenni Wu and Qingfei Xian, 2026, this resource and its source_manifest.csv. Indicate modifications and retain source attribution.
+Original compilation, documentation and any database rights that the authors are entitled to license are licensed under Creative Commons Attribution 4.0 International (CC-BY-4.0): https://creativecommons.org/licenses/by/4.0/legalcode . Attribution for this version: Zhongfeng Shi, 2026, this resource and its source_manifest.csv. The attribution metadata has been modified from the GitHub v1.0.0 release. Indicate modifications and retain source attribution.
 
 The unchanged scripts/validate_candidate_tables.py and tests/test_validate_candidate_tables.py use MIT; see LICENSES/MIT.txt. Their existing copyright notice is retained. The exact original contract and dictionary retain their existing scoped CC BY 4.0 notice. LICENSES/file_licenses.json maps original licensed files to their distributed paths and SHA-256 values; private authorization records are not distributed.
 
